@@ -2,11 +2,11 @@ import React, { Fragment } from "react";
 import Image from "next/image";
 // Headless ui tab
 import { Tab } from "@headlessui/react";
+import { ChevronRightIcon } from "@heroicons/react/outline";
 
 import Container from "../../Commons/Container/Index";
-import VariationCard from "./VariationCard";
 
-const SelectVariation = () => {
+const SelectDay = () => {
   return (
     <Container>
       <div className="w-full flex items-start justify-start flex-col gap-7 md:gap-9 lg:gap-12">
@@ -46,7 +46,7 @@ const SelectVariation = () => {
                         selected ? "text-white" : "text-osloGrey"
                       }`}
                     >
-                      Variation
+                      Moment
                     </p>
                   </div>
                 )}
@@ -80,11 +80,20 @@ const SelectVariation = () => {
                 )}
               </Tab>
             </Tab.List>
-            <Tab.Panels>
-              <Tab.Panel className="w-full flex flex-col items-center justify-start mt-16">
-                <div className="w-full flex items-center justify-start gap-8 flex-wrap">
-                  <VariationCard />
-                  <VariationCard />
+            <Tab.Panels className="w-full">
+              <Tab.Panel className="w-full flex flex-col items-start justify-start mt-16">
+                <div className="w-full lg:w-[75%] flex items-center justify-start flex-wrap gap-6 ">
+                  {[0, 1, 2, 4, 5, 6, 7, 8, 9, 1, 2].map((item, index) => (
+                    <div
+                      key={index}
+                      className="w-[260px] sm:w-[290px] flex items-center justify-between gap-3 bg-balticSea p-5 sm:p-7 rounded-xl cursor-pointer"
+                    >
+                      <p className="text-white text-lg sm:text-xl font-bold text-left">
+                        Maandag, 14 april
+                      </p>
+                      <ChevronRightIcon className="w-[20px] sm:w-[24px] h-[20px] sm:h-[24px] text-white" />
+                    </div>
+                  ))}
                 </div>
               </Tab.Panel>
             </Tab.Panels>
@@ -95,4 +104,4 @@ const SelectVariation = () => {
   );
 };
 
-export default SelectVariation;
+export default SelectDay;
