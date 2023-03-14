@@ -5,6 +5,7 @@ import { Tab } from "@headlessui/react";
 import { ChevronRightIcon } from "@heroicons/react/outline";
 
 import Container from "../../Commons/Container/Index";
+import { Fade } from "react-awesome-reveal";
 
 const SelectDay = () => {
   return (
@@ -83,17 +84,16 @@ const SelectDay = () => {
             </Tab.List>
             <Tab.Panels className="w-full">
               <Tab.Panel className="w-full flex flex-col items-start justify-start mt-16">
-                <div className="w-full lg:w-[75%] flex items-center justify-start flex-wrap gap-6 ">
+                <div className="w-full lg:w-[75%] flex items-center justify-start flex-wrap gap-6 ovrflow-x-hidden">
                   {[0, 1, 2, 4, 5, 6, 7, 8, 9, 1, 2].map((item, index) => (
-                    <div
-                      key={index}
-                      className="w-[260px] sm:w-[290px] flex items-center justify-between gap-3 bg-balticSea p-5 sm:p-7 rounded-xl cursor-pointer"
-                    >
-                      <p className="text-white text-lg sm:text-xl font-bold text-left">
-                        Maandag, 14 april
-                      </p>
-                      <ChevronRightIcon className="w-[20px] sm:w-[24px] h-[20px] sm:h-[24px] text-white" />
-                    </div>
+                    <Fade key={index} direction="right" triggerOnce>
+                      <div className="w-[260px] sm:w-[290px] flex items-center justify-between gap-3 bg-balticSea p-5 sm:p-7 rounded-xl cursor-pointer">
+                        <p className="text-white text-lg sm:text-xl font-bold text-left">
+                          Maandag, 14 april
+                        </p>
+                        <ChevronRightIcon className="w-[20px] sm:w-[24px] h-[20px] sm:h-[24px] text-white" />
+                      </div>
+                    </Fade>
                   ))}
                 </div>
               </Tab.Panel>

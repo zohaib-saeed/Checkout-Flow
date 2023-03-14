@@ -5,6 +5,7 @@ import { Tab } from "@headlessui/react";
 
 import Container from "../../Commons/Container/Index";
 import VariationCard from "./VariationCard";
+import { Fade } from "react-awesome-reveal";
 
 const SelectVariation = () => {
   return (
@@ -83,7 +84,7 @@ const SelectVariation = () => {
             </Tab.List>
             <Tab.Panels>
               <Tab.Panel className="w-full flex flex-col items-center justify-start mt-16">
-                <div className="w-full flex items-center justify-start gap-8 flex-wrap">
+                <div className="w-full flex items-center justify-start gap-8 flex-wrap overflow-x-hidden">
                   <VariationCard />
                   <VariationCard />
                 </div>

@@ -3,6 +3,7 @@ import Image from "next/image";
 // Headless ui tab
 import { Tab } from "@headlessui/react";
 import { ChevronRightIcon } from "@heroicons/react/outline";
+import { Fade } from "react-awesome-reveal";
 
 import Container from "../../Commons/Container/Index";
 import CheckoutCard from "./CheckoutCard";
@@ -89,7 +90,7 @@ const Checkout = () => {
                   <p className="text-white">Selection tab</p>
                 </Tab.Panel>
                 <Tab.Panel className="w-full flex flex-col items-center justify-start mt-16">
-                  <div className="w-full flex items-center justify-start gap-8 flex-wrap">
+                  <div className="w-full flex items-center justify-start gap-8 flex-wrap overflow-x-hidden">
                     <CheckoutCard />
                     <CheckoutCard />
                     <CheckoutCard />
@@ -103,27 +104,37 @@ const Checkout = () => {
         {/* Col 2  */}
         <div className="w-full flex items-center justify-start flex-col bg-balticSea px-6 sm:px-9 lg:px-12 py-4 sm:py-7 md:py-9 lg:py-12 relative">
           <div className="w-full max-w-[450px] sm:max-w-none sm:w-[75%] md:w-[50%] lg:w-full flex flex-col items-start justify-start gap-3 sm:gap-4 lg:sticky top-0 right-0 ">
-            <h1 className="text-lg sm:text-xl font-bold text-white">
-              Tulpenroute
-            </h1>
-            <p className="w-full lg:w-[90%] text-osloGrey text-[14px] sm:text-[15px] text-left">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
-            </p>
-            <input
-              type="email"
-              placeholder="name@domain.com"
-              className="bg-black p-3 sm:p-4 rounded-2xl w-full border-none focus:border-none focus:outline-none text-white text-base "
-            />
+            <Fade direction="up" triggerOnce delay={0.2} classNamew="w-full">
+              <h1 className="text-lg sm:text-xl font-bold text-white">
+                Tulpenroute
+              </h1>
+            </Fade>
+            <Fade direction="up" triggerOnce delay={0.3} className="w-full">
+              <p className="w-full lg:w-[90%] text-osloGrey text-[14px] sm:text-[15px] text-left">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+            </Fade>
+            <Fade direction="up" triggerOnce delay={0.4} className="w-full">
+              <input
+                type="email"
+                placeholder="name@domain.com"
+                className="bg-black p-3 sm:p-4 rounded-2xl w-full border-none focus:border-none focus:outline-none text-white text-base "
+              />
+            </Fade>
             <div className="w-full h-[1px] my-2 rounded-full bg-osloGrey bg-opacity-20"></div>
-            <div className="w-full flex items-center justify-between">
-              <h2 className="text-osloGrey font-medium text-base">Total</h2>
-              <p className="text-white font-bold text-base">EUR 4,-</p>
-            </div>
-            <button className=" w-full border-none bg-osloGrey bg-opacity-10 p-3 sm:p-4 text-white font-bold text-base rounded-2xl">
-              Checkout
-            </button>
+            <Fade direction="up" triggerOnce delay={0.5} className="w-full">
+              <div className="w-full flex items-center justify-between">
+                <h2 className="text-osloGrey font-medium text-base">Total</h2>
+                <p className="text-white font-bold text-base">EUR 4,-</p>
+              </div>
+            </Fade>
+            <Fade direction="up" triggerOnce delay={0.6} className="w-full">
+              <button className=" w-full border-none bg-osloGrey bg-opacity-10 p-3 sm:p-4 text-white font-bold text-base rounded-2xl">
+                Checkout
+              </button>
+            </Fade>
           </div>
         </div>
       </div>
