@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 const CheckoutCard = () => {
   return (
     <Fade direction="right" triggerOnce className="w-full sm:w-[550px]">
-      <div className="w-full sm:w-[550px] bg-balticSea rounded-3xl flex items-center sm:items-start justify-start gap-3 xs:gap-5 sm:gap-7 p-4 sm:p-6 pr-7 sm:pr-9 cursor-pointer">
+      <div className="w-full sm:w-[500px] bg-balticSea rounded-3xl flex items-center sm:items-start justify-start gap-3 xs:gap-5 sm:gap-7 p-4 sm:p-6 pr-7 sm:pr-9 cursor-pointer">
         <div className="w-[100px] sm:w-[117px] h-[100px] sm:h-[117px] flex items-center justify-center relative rounded-lg overflow-hidden">
           <Image
             src="/images/sample-main.png"
