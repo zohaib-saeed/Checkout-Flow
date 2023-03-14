@@ -12,9 +12,9 @@ export default function Home() {
   return (
     <React.Fragment>
       {/* <SelectRoute /> */}
-      <SelectVariation />
+      {/* <SelectVariation /> */}
       {/* <SelectDay /> */}
-      {/* <Checkout /> */}
+      <Checkout />
       {/* <Confirmation /> */}
     </React.Fragment>
   );

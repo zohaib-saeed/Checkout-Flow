@@ -24,7 +24,7 @@ const SelectVariation = () => {
         {/* Tabs  */}
         <div className="w-full flex items-start justify-start flex-col">
           <Tab.Group>
-            <Tab.List className="w-full flex items-center justify-start gap-12 sm:gap-16">
+            <Tab.List className="w-full flex items-center justify-start gap-10 xs:gap-12 sm:gap-16">
               <Tab as={Fragment}>
                 {({ selected }) => (
                   <div

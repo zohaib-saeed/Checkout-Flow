@@ -27,7 +27,7 @@ const Checkout = () => {
           {/* Tabs  */}
           <div className="w-full flex items-start justify-start flex-col">
             <Tab.Group>
-              <Tab.List className="w-full flex items-center justify-start gap-12 sm:gap-16">
+              <Tab.List className="w-full flex items-center justify-start gap-10 xs:gap-12 sm:gap-16">
                 <Tab as={Fragment}>
                   {({ selected }) => (
                     <div
@@ -86,11 +86,11 @@ const Checkout = () => {
                 </Tab>
               </Tab.List>
               <Tab.Panels>
-                <Tab.Panel className="w-full flex flex-col items-center justify-start mt-16">
+                <Tab.Panel className="w-full flex flex-col items-center justify-start mt-12 sm:mt-16">
                   <p className="text-white">Selection tab</p>
                 </Tab.Panel>
-                <Tab.Panel className="w-full flex flex-col items-center justify-start mt-16">
-                  <div className="w-full flex items-center justify-start gap-8 flex-wrap overflow-x-hidden">
+                <Tab.Panel className="w-full flex flex-col items-center justify-start mt-12 sm:mt-16">
+                  <div className="w-full flex items-center justify-start gap-3 sm:gap-8 flex-wrap overflow-x-hidden">
                     <CheckoutCard />
                     <CheckoutCard />
                     <CheckoutCard />
