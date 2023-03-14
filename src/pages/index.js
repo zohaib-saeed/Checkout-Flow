@@ -11,10 +11,10 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <React.Fragment>
-      {/* <SelectRoute /> */}
+      <SelectRoute />
       {/* <SelectVariation /> */}
       {/* <SelectDay /> */}
-      <Checkout />
+      {/* <Checkout /> */}
       {/* <Confirmation /> */}
     </React.Fragment>
   );
