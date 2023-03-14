@@ -82,8 +82,8 @@ const SelectRoute = () => {
               </Tab>
             </Tab.List>
             <Tab.Panels>
-              <Tab.Panel className="w-full flex flex-col items-center justify-start mt-16">
-                <div className="w-full flex items-center justify-start gap-8 flex-wrap overflow-x-hidden">
+              <Tab.Panel className="w-full flex flex-col items-center justify-start mt-12 sm:mt-16">
+                <div className="w-full flex items-center justify-start gap-3 sm:gap-8 flex-wrap overflow-x-hidden">
                   <RouteCard />
                   <RouteCard />
                   <RouteCard />

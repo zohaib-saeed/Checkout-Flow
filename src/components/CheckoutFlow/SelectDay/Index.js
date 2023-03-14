@@ -24,7 +24,7 @@ const SelectDay = () => {
         {/* Tabs  */}
         <div className="w-full flex items-start justify-start flex-col">
           <Tab.Group>
-            <Tab.List className="w-full flex items-center justify-start gap-12 sm:gap-16">
+            <Tab.List className="w-full flex items-center justify-start gap-10 xs:gap-12 sm:gap-16">
               <Tab as={Fragment}>
                 {({ selected }) => (
                   <div
@@ -83,8 +83,8 @@ const SelectDay = () => {
               </Tab>
             </Tab.List>
             <Tab.Panels className="w-full">
-              <Tab.Panel className="w-full flex flex-col items-start justify-start mt-16">
-                <div className="w-full lg:w-[75%] flex items-center justify-start flex-wrap gap-6 ovrflow-x-hidden">
+              <Tab.Panel className="w-full flex flex-col items-start justify-start mt-12 sm:mt-16">
+                <div className="w-full lg:w-[75%] flex items-center justify-start flex-wrap gap-4 sm:gap-6 ovrflow-x-hidden">
                   {[0, 1, 2, 4, 5, 6, 7, 8, 9, 1, 2].map((item, index) => (
                     <Fade key={index} direction="right" triggerOnce>
                       <div className="w-[260px] sm:w-[290px] flex items-center justify-between gap-3 bg-balticSea p-5 sm:p-7 rounded-xl cursor-pointer">

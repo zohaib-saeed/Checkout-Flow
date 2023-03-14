@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <React.Fragment>
       {/* <SelectRoute /> */}
-      {/* <SelectVariation /> */}
-      <SelectDay />
+      <SelectVariation />
+      {/* <SelectDay /> */}
       {/* <Checkout /> */}
       {/* <Confirmation /> */}
     </React.Fragment>
