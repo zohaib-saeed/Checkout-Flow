@@ -26,6 +26,7 @@ module.exports = {
       lightGrey: "#D9D9D9",
       balticSea: "#1E1F28",
       mirage: "#15141B",
+      red: "#FF0000",
     },
     extend: {},
   },
