@@ -100,7 +100,7 @@ const Checkout = () => {
           </div>
         </div>
         {/* Col 2  */}
-        <div className="w-full flex items-center justify-start flex-col bg-balticSea px-6 sm:px-9 lg:px-12 py-4 sm:py-7 md:py-9 lg:py-12 relative">
+        <div className="w-full flex items-center justify-start flex-col bg-balticSea rounded-tl-[24px] xs:rounded-tl-[30px] sm:rounded-tl-[70px] px-6 sm:px-9 lg:px-12 py-4 sm:py-7 md:py-9 lg:py-12 relative">
           <div className="w-full max-w-[450px] sm:max-w-none sm:w-[75%] md:w-[50%] lg:w-full flex flex-col items-start justify-start gap-3 sm:gap-4 lg:sticky top-0 right-0 ">
             <Fade direction="up" triggerOnce delay={0.2} classNamew="w-full">
               <h1 className="text-lg sm:text-xl font-bold text-white">
