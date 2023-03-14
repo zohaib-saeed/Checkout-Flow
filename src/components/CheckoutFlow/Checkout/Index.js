@@ -10,10 +10,10 @@ import CheckoutCard from "./CheckoutCard";
 
 const Checkout = () => {
   return (
-    <Container padding="px-0 py-0">
-      <div className="w-full grid gridc-cols-1 lg:grid-cols-[1.3fr_0.7fr] gap-8 lg:gap-0 h-screen min-h-[600px] ">
+    <Container padding="px-0 py-0 ">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-[1.3fr_0.7fr] gap-8 ">
         {/* Col 1 */}
-        <div className="w-full flex items-start justify-start flex-col gap-7 md:gap-9 lg:gap-12 px-3 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-7 md:py-9 lg:py-12 ">
+        <div className="w-full  flex items-start justify-start flex-col gap-7 md:gap-9 lg:gap-12 px-3 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-7 md:py-9 lg:py-12 ">
           {/* Logo  */}
           <div className="w-[120px] h-[108px] flex items-center justify-center relative">
             <Image
@@ -91,8 +91,6 @@ const Checkout = () => {
                 </Tab.Panel>
                 <Tab.Panel className="w-full flex flex-col items-center justify-start mt-12 sm:mt-16">
                   <div className="w-full flex items-center justify-start gap-3 sm:gap-8 flex-wrap overflow-x-hidden">
-                    <CheckoutCard />
-                    <CheckoutCard />
                     <CheckoutCard />
                     <CheckoutCard />
                   </div>
