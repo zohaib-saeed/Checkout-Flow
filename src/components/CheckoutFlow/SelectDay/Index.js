@@ -16,6 +16,7 @@ const SelectDay = () => {
             src="/images/logo.svg"
             alt="Logo"
             fill
+            priority
             className="object-contain"
           />
         </div>

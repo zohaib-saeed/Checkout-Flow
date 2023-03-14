@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { Fade } from "react-awesome-reveal";
 
 import Container from "../Commons/Container/Index";
 
@@ -13,6 +14,7 @@ const Confirmation = () => {
             src="/images/logo.svg"
             alt="Logo"
             fill
+            priority
             className="object-contain"
           />
         </div>
