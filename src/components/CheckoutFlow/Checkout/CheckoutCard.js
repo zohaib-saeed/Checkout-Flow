@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { ChevronRightIcon } from "@heroicons/react/outline";
 import { Fade } from "react-awesome-reveal";
 
 const CheckoutCard = () => {

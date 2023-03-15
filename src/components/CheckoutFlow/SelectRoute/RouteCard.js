@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { ChevronRightIcon } from "@heroicons/react/outline";
+import { ChevronRightIcon } from "@heroicons/react/24/outline";
 import { Fade } from "react-awesome-reveal";
 
 const RouteCard = () => {

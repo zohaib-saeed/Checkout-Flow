@@ -2,7 +2,7 @@ import React, { Fragment, useState } from "react";
 import Image from "next/image";
 // Headless ui tab
 import { Tab } from "@headlessui/react";
-import { ChevronRightIcon } from "@heroicons/react/outline";
+
 import { Fade } from "react-awesome-reveal";
 
 import Container from "../../Commons/Container/Index";
