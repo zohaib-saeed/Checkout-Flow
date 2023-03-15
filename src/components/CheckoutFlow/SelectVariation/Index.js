@@ -5,7 +5,7 @@ import { Tab } from "@headlessui/react";
 
 import VariationCard from "./VariationCard";
 import { Fade } from "react-awesome-reveal";
-import Checkout from "@/components/Checkout/Index";
+import Checkout from "@/components/CheckoutFlow/Checkout/Index";
 
 const SelectVariation = () => {
   return (
@@ -86,12 +86,14 @@ const SelectVariation = () => {
                 </Tab>
               </Tab.List>
               <Tab.Panels>
+                {/* Tab panel 1 */}
                 <Tab.Panel className="w-full flex flex-col items-center justify-start mt-12 sm:mt-16">
                   <div className="w-full flex items-center justify-start gap-3 sm:gap-8 flex-wrap overflow-x-hidden">
                     <VariationCard />
                     <VariationCard />
                   </div>
                 </Tab.Panel>
+                {/* Tab panel 2 */}
                 <Tab.Panel className="w-full flex flex-col items-center justify-start mt-12 sm:mt-16 ">
                   <Checkout />
                 </Tab.Panel>

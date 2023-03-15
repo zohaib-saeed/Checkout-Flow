@@ -54,6 +54,7 @@ const Confirmation = () => {
                 </div>
               </Fade>
             </div>
+            {/* Ticket number  */}
             <Fade className="w-full" direction="up" triggerOnce>
               <div className="text-osloGrey w-full text-center text-[50px] sm:text-[64px] font-bold">
                 643231

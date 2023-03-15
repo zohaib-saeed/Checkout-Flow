@@ -5,7 +5,7 @@ import { Tab } from "@headlessui/react";
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 
 import { Fade } from "react-awesome-reveal";
-import Checkout from "@/components/Checkout/Index";
+import Checkout from "@/components/CheckoutFlow/Checkout/Index";
 
 const SelectDay = () => {
   return (
@@ -86,6 +86,7 @@ const SelectDay = () => {
                 </Tab>
               </Tab.List>
               <Tab.Panels className="w-full">
+                {/* Panel 1 */}
                 <Tab.Panel className="w-full flex flex-col items-start justify-start mt-12 sm:mt-16">
                   <div className="w-full lg:w-[75%] grid grid-cols-2 xs:flex items-center justify-start flex-wrap gap-3 xs:gap-4 sm:gap-6 overflow-x-hidden px-3 sm:px-4 md:px-6 lg:px-8">
                     {[0, 1, 2, 4, 5, 6, 7, 8, 9, 1, 2].map((item, index) => (
@@ -100,6 +101,7 @@ const SelectDay = () => {
                     ))}
                   </div>
                 </Tab.Panel>
+                {/* Panel 2  */}
                 <Tab.Panel className="w-full flex flex-col items-start justify-start mt-12 sm:mt-16">
                   <Checkout />
                 </Tab.Panel>

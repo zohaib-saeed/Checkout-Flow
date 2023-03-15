@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Tab } from "@headlessui/react";
 
 import RouteCard from "./RouteCard";
-import Checkout from "@/components/Checkout/Index";
+import Checkout from "@/components/CheckoutFlow/Checkout/Index";
 
 const SelectRoute = () => {
   return (
@@ -85,6 +85,7 @@ const SelectRoute = () => {
                 </Tab>
               </Tab.List>
               <Tab.Panels>
+                {/* Panel 1 */}
                 <Tab.Panel className="w-full flex flex-col items-center justify-start mt-12 sm:mt-16 ">
                   <div className="w-full flex items-center justify-start gap-3 sm:gap-8 flex-wrap overflow-x-hidden px-3 sm:px-4 md:px-6 lg:px-8">
                     <RouteCard />
@@ -92,6 +93,7 @@ const SelectRoute = () => {
                     <RouteCard />
                   </div>
                 </Tab.Panel>
+                {/* Panel 2 */}
                 <Tab.Panel className="w-full flex flex-col items-center justify-start mt-12 sm:mt-16 ">
                   <Checkout />
                 </Tab.Panel>

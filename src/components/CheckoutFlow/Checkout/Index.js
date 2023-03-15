@@ -50,6 +50,7 @@ const Checkout = () => {
             </p>
           </Fade>
           <Fade direction="up" triggerOnce delay={0.4} className="w-full">
+            {/* Email Input  */}
             <div>
               <input
                 type="email"
@@ -63,11 +64,13 @@ const Checkout = () => {
           </Fade>
           <div className="w-full h-[1px] my-2 rounded-full bg-osloGrey bg-opacity-20"></div>
           <Fade direction="up" triggerOnce delay={0.5} className="w-full">
+            {/* Total  */}
             <div className="w-full flex items-center justify-between">
               <h2 className="text-osloGrey font-medium text-base">Total</h2>
               <p className="text-white font-bold text-base">EUR 4,-</p>
             </div>
           </Fade>
+          {/* Checkout button  */}
           <Fade direction="up" triggerOnce delay={0.6} className="w-full">
             <button
               onClick={handleSubmit}
