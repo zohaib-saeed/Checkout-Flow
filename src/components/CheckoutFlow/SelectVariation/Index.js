@@ -28,14 +28,14 @@ const SelectVariation = () => {
               <Tab as={Fragment}>
                 {({ selected }) => (
                   <div
-                    className={` flex items-center justify-start gap-[10px] cursor-pointer ${
+                    className={` flex items-center justify-start gap-2 xs:gap-[10px] cursor-pointer ${
                       selected
                         ? "text-black text-base border-[0px] outline-[0px]"
                         : " text-osloGrey text-md border-[0px] outline-[0px]"
                     }`}
                   >
                     <span
-                      className={`w-[40px] h-[40px] flex items-center justify-center text-2xl rounded-full font-bold leading-[0px]  ${
+                      className={`w-[30px] xs:w-[40px] h-[30px] xs:h-[40px] flex items-center justify-center text-lg xs:text-2xl rounded-full font-bold leading-[0px]  ${
                         selected
                           ? "bg-lightGrey   text-blackn  "
                           : "text-osloGrey bg-balticSea"
@@ -44,7 +44,7 @@ const SelectVariation = () => {
                       1
                     </span>{" "}
                     <p
-                      className={`text-xl font-bold ${
+                      className={`text-lg xs:text-xl font-bold ${
                         selected ? "text-white" : "text-osloGrey"
                       }`}
                     >
@@ -56,14 +56,14 @@ const SelectVariation = () => {
               <Tab as={Fragment}>
                 {({ selected }) => (
                   <div
-                    className={`flex items-center justify-start gap-[10px] cursor-pointer ${
+                    className={`flex items-center justify-start gap-2 xs:gap-[10px] cursor-pointer ${
                       selected
                         ? "text-black text-base border-[0px] outline-[0px]"
                         : " text-osloGrey text-md border-[0px] outline-[0px]"
                     }`}
                   >
                     <span
-                      className={`w-[40px] h-[40px] flex items-center justify-center text-2xl rounded-full font-bold leading-[0px] ${
+                      className={`w-[30px] xs:w-[40px] h-[30px] xs:h-[40px] flex items-center justify-center text-lg xs:text-2xl rounded-full font-bold leading-[0px] ${
                         selected
                           ? "bg-lightGrey   text-blackn "
                           : "text-osloGrey bg-balticSea"
@@ -72,7 +72,7 @@ const SelectVariation = () => {
                       2
                     </span>{" "}
                     <p
-                      className={`text-xl font-bold ${
+                      className={`text-lg xs:text-xl font-bold ${
                         selected ? "text-white" : "text-osloGrey"
                       }`}
                     >

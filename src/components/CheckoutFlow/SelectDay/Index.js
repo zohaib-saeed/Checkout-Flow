@@ -28,14 +28,14 @@ const SelectDay = () => {
               <Tab as={Fragment}>
                 {({ selected }) => (
                   <div
-                    className={` flex items-center justify-start gap-[10px] cursor-pointer ${
+                    className={` flex items-center justify-start gap-2 xs:gap-[10px] cursor-pointer ${
                       selected
                         ? "text-black text-base border-[0px] outline-[0px]"
                         : " text-osloGrey text-md border-[0px] outline-[0px]"
                     }`}
                   >
                     <span
-                      className={`w-[40px] h-[40px] flex items-center justify-center text-2xl rounded-full font-bold leading-[0px]  ${
+                      className={`w-[30px] xs:w-[40px] h-[30px] xs:h-[40px] flex items-center justify-center text-lg xs:text-2xl rounded-full font-bold leading-[0px]  ${
                         selected
                           ? "bg-lightGrey   text-blackn  "
                           : "text-osloGrey bg-balticSea"
@@ -44,7 +44,7 @@ const SelectDay = () => {
                       1
                     </span>{" "}
                     <p
-                      className={`text-xl font-bold ${
+                      className={`text-lg xs:text-xl font-bold ${
                         selected ? "text-white" : "text-osloGrey"
                       }`}
                     >
@@ -56,14 +56,14 @@ const SelectDay = () => {
               <Tab as={Fragment}>
                 {({ selected }) => (
                   <div
-                    className={`flex items-center justify-start gap-[10px] cursor-pointer ${
+                    className={`flex items-center justify-start gap-2 xs:gap-[10px] cursor-pointer ${
                       selected
                         ? "text-black text-base border-[0px] outline-[0px]"
                         : " text-osloGrey text-md border-[0px] outline-[0px]"
                     }`}
                   >
                     <span
-                      className={`w-[40px] h-[40px] flex items-center justify-center text-2xl rounded-full font-bold leading-[0px] ${
+                      className={`w-[30px] xs:w-[40px] h-[30px] xs:h-[40px] flex items-center justify-center text-lg xs:text-2xl rounded-full font-bold leading-[0px] ${
                         selected
                           ? "bg-lightGrey   text-blackn "
                           : "text-osloGrey bg-balticSea"
@@ -72,7 +72,7 @@ const SelectDay = () => {
                       2
                     </span>{" "}
                     <p
-                      className={`text-xl font-bold ${
+                      className={`text-lg xs:text-xl font-bold ${
                         selected ? "text-white" : "text-osloGrey"
                       }`}
                     >
@@ -84,14 +84,14 @@ const SelectDay = () => {
             </Tab.List>
             <Tab.Panels className="w-full">
               <Tab.Panel className="w-full flex flex-col items-start justify-start mt-12 sm:mt-16">
-                <div className="w-full lg:w-[75%] flex items-center justify-start flex-wrap gap-4 sm:gap-6 ovrflow-x-hidden">
+                <div className="w-full lg:w-[75%] grid grid-cols-2 xs:flex items-center justify-start flex-wrap gap-3 xs:gap-4 sm:gap-6 ovrflow-x-hidden">
                   {[0, 1, 2, 4, 5, 6, 7, 8, 9, 1, 2].map((item, index) => (
                     <Fade key={index} direction="right" triggerOnce>
-                      <div className="w-[260px] sm:w-[290px] flex items-center justify-between gap-3 bg-balticSea p-5 sm:p-7 rounded-xl cursor-pointer">
-                        <p className="text-white text-lg sm:text-xl font-bold text-left">
+                      <div className="w-full xs:w-[260px] sm:w-[290px] flex items-center justify-between gap-[6px] xs:gap-3 bg-balticSea p-2 py-4 xs:p-5 sm:p-7 rounded-xl cursor-pointer">
+                        <p className="text-white text-sm xs:text-lg sm:text-xl font-bold text-left">
                           Maandag, 14 april
                         </p>
-                        <ChevronRightIcon className="w-[20px] sm:w-[24px] h-[20px] sm:h-[24px] text-white" />
+                        <ChevronRightIcon className="w-[15px] xs:w-[20px] sm:w-[24px] h-[15px] xs:h-[20px] sm:h-[24px] text-white" />
                       </div>
                     </Fade>
                   ))}
